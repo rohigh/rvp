@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@theme inline {
+ --color-card: #FFFFFF;
+ --color-card-foreground: #121B26;
+ --color-background: #FFFFFF;
+ --color-foreground: #121B26;
+ --color-primary: #E59833;
+ --color-primary-foreground: #121B26;
+ --color-secondary: #C8D7EA;
+ --color-secondary-foreground: #121B26;
+ --color-accent: #F4F7FA;
+ --color-accent-foreground: #14509E;
+ --color-muted-foreground: #092243;
+ --color-border: #C8D7EA;
+ --color-input: #C8D7EA;
+ --color-ring: #14509E;
+ --color-brand: #14509E;
+ --color-popover: #FFFFFF;
+ --color-popover-foreground: #121B26;
+ --font-sans: "Nirmala UI", "Noto Sans Kannada", "Segoe UI", sans-serif;
+}
+body { margin: 0; background: #F4F7FA; color: #121B26; font-family: var(--font-sans); }
+html[lang="kn"] { line-height: 1.8; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }
+#main-content:focus { outline: none; }

@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.local
+*.log
+.DS_Store
+Thumbs.db
+/1.png
+/2.png
+/3.png
+/logo.jpeg
+/*.docx
+/*.pdf
