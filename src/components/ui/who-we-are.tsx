@@ -5,7 +5,7 @@ const content = {
   en: {
     eyebrow: "ROOTED IN TUMAKURU", heading: "Who We Are",
     intro: "Used oil. Renewed purpose.",
-    body: "RVP Refinery is in Vasanthanarasapura Industrial Area, Tumakuru. We collect used engine oil and machine oil. We clean it at our plant and make base oil. This oil is used again, so it does not go to waste.",
+    body: "RVP Refinery is in Vasanthanarasapura Industrial Area, Tumakuru. We collect used engine oil and machine oil. We re-refine it at our plant and make base oil. This oil is used again, so it does not go to waste.",
     link: "Read more about us", since: "Working since", location: "Tumakuru, Karnataka",
     plant: "Our own plant", place: "Vasanthanarasapura Industrial Area",
     steps: ["Used oil", "Re-refining", "Base oil"],
@@ -15,7 +15,7 @@ const content = {
   kn: {
     eyebrow: "ತುಮಕೂರಿನಲ್ಲಿ ನಮ್ಮ ನೆಲೆ", heading: "ನಾವು ಯಾರು",
     intro: "ಬಳಸಿದ ತೈಲಕ್ಕೆ ಹೊಸ ಉಪಯೋಗ.",
-    body: "ಆರ್‌ವಿಪಿ ರಿಫೈನರಿ ತುಮಕೂರಿನ ವಸಂತನರಸಾಪುರ ಕೈಗಾರಿಕಾ ಪ್ರದೇಶದಲ್ಲಿದೆ. ನಾವು ಬಳಸಿದ ಎಂಜಿನ್ ತೈಲ ಮತ್ತು ಯಂತ್ರದ ತೈಲವನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ. ನಮ್ಮ ಘಟಕದಲ್ಲಿ ಅದನ್ನು ಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ತಯಾರಿಸುತ್ತೇವೆ. ಈ ತೈಲ ಮತ್ತೆ ಬಳಕೆಯಾಗುತ್ತದೆ, ವ್ಯರ್ಥವಾಗುವುದಿಲ್ಲ.",
+    body: "ಆರ್‌ವಿಪಿ ರಿಫೈನರಿ ತುಮಕೂರಿನ ವಸಂತನರಸಾಪುರ ಕೈಗಾರಿಕಾ ಪ್ರದೇಶದಲ್ಲಿದೆ. ನಾವು ಬಳಸಿದ ಎಂಜಿನ್ ತೈಲ ಮತ್ತು ಯಂತ್ರದ ತೈಲವನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ. ನಮ್ಮ ಘಟಕದಲ್ಲಿ ಅದನ್ನು ಮರುಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ತಯಾರಿಸುತ್ತೇವೆ. ಈ ತೈಲ ಮತ್ತೆ ಬಳಕೆಯಾಗುತ್ತದೆ, ವ್ಯರ್ಥವಾಗುವುದಿಲ್ಲ.",
     link: "ನಮ್ಮ ಬಗ್ಗೆ ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ", since: "ಕಾರ್ಯಾರಂಭ", location: "ತುಮಕೂರು, ಕರ್ನಾಟಕ",
     plant: "ನಮ್ಮ ಸ್ವಂತ ಘಟಕ", place: "ವಸಂತನರಸಾಪುರ ಕೈಗಾರಿಕಾ ಪ್ರದೇಶ",
     steps: ["ಬಳಸಿದ ತೈಲ", "ಮರುಶುದ್ಧೀಕರಣ", "ಬೇಸ್ ಆಯಿಲ್"],

@@ -2,6 +2,7 @@ import { useEffect, useId, useLayoutEffect, useRef, useState, useSyncExternalSto
 import { AnimatePresence, LazyMotion, MotionConfig, domAnimation, m, useReducedMotion } from "motion/react";
 import { pageHref, pages, type Language } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
+import { company } from "@/lib/company";
 import "./footer-inverse.css";
 
 const content = {
@@ -212,7 +213,17 @@ export default function FooterInverse({ language, currentPage }: { language: Lan
               <div className="footer-about">
                 <h3 className="footer-info-label"><FooterReveal delay={0.7}>{copy.aboutLabel}</FooterReveal></h3>
                 <p><FooterLines text={copy.about} delay={0.75} /></p>
-                <p className="footer-gstin"><FooterReveal delay={1.05}>GSTIN: <span className="whitespace-nowrap">29AXEPV1672Q1ZI</span></FooterReveal></p>
+                <p className="footer-gstin"><FooterReveal delay={1.05}>GSTIN: <span className="whitespace-nowrap">{company.gstin}</span></FooterReveal></p>
+                <div className="footer-contact-links">
+                  {[
+                    { href: company.phone ? `tel:${company.phone}` : "", label: company.phoneDisplay },
+                    { href: company.email ? `mailto:${company.email}` : "", label: company.email },
+                  ].filter(link => link.href).map((link, index) => (
+                    <FooterReveal key={link.href} delay={1.1 + index * 0.08}>
+                      <m.a href={link.href} className="footer-text-link" initial="rest" animate="rest" whileHover="hover" whileFocus="hover" variants={{ rest: { color: "#FFFFFF" }, hover: { color: "#E59833" } }} transition={{ duration: 0.4, ease: revealEase }}>{link.label}</m.a>
+                    </FooterReveal>
+                  ))}
+                </div>
               </div>
               <div>
                 <h3 className="footer-info-label"><FooterReveal delay={0.8}>{copy.addressLabel}</FooterReveal></h3>

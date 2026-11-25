@@ -6,9 +6,10 @@ export const company = {
   founded: "2018",
   gstin: "29AXEPV1672Q1ZI",
   address: "Sy. No. 26, Shed No. 2, Plot No. 97-B, Vasanthanarasapura Industrial Area, Nagenahalli, Kora Hobli, Tumakuru Taluk, Tumakuru, Karnataka – 572128",
-  phone: "",
-  whatsapp: "",
-  email: "",
+  phone: "+919176642399",
+  phoneDisplay: "+91 91766 42399",
+  whatsapp: "919176642399",
+  email: "rvp.tumkur@gmail.com",
   mapUrl: "",
   enquiryEndpoint: "",
 };

@@ -789,7 +789,7 @@ const LanguageContext = createContext<Language>('en');
 const HERO_COPY = {
  en: {
   eyebrow: 'Tumakuru, Karnataka · Since 2018',
-  headline: ['We Give Used Oil'], accentWord: 'a New Life.',
+  headline: ['We Give Used', 'Industrial Oil'], accentWord: 'a New Life.',
   body: 'We buy used oil from garages, transport companies and factories. We clean it and turn it into base oil. In Tumakuru since 2018.',
   primaryCta: 'Sell Used Oil', secondaryCta: 'Buy Base Oil',
   process: 'The journey from used oil to base oil', explore: 'Explore the oil journey', hover: 'Hover or click to explore', tap: 'Tap to explore the oil journey',
@@ -798,7 +798,7 @@ const HERO_COPY = {
  },
  kn: {
   eyebrow: 'ತುಮಕೂರು, ಕರ್ನಾಟಕ · 2018ರಿಂದ',
-  headline: ['ಬಳಸಿದ ತೈಲಕ್ಕೆ'], accentWord: 'ಹೊಸ ಜೀವ.',
+  headline: ['ಬಳಸಿದ ಕೈಗಾರಿಕಾ ತೈಲಕ್ಕೆ'], accentWord: 'ಹೊಸ ಜೀವ.',
   body: 'ನಾವು ಗ್ಯಾರೇಜುಗಳು, ಸಾರಿಗೆ ಕಂಪನಿಗಳು ಮತ್ತು ಕಾರ್ಖಾನೆಗಳಿಂದ ಬಳಸಿದ ತೈಲವನ್ನು ಖರೀದಿಸುತ್ತೇವೆ. ಅದನ್ನು ಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ಆಗಿ ಪರಿವರ್ತಿಸುತ್ತೇವೆ. 2018ರಿಂದ ತುಮಕೂರಿನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದ್ದೇವೆ.',
   primaryCta: 'ಬಳಸಿದ ತೈಲ ಮಾರಾಟ', secondaryCta: 'ಬೇಸ್ ಆಯಿಲ್ ಖರೀದಿ',
   process: 'ಬಳಸಿದ ತೈಲದಿಂದ ಬೇಸ್ ಆಯಿಲ್‌ವರೆಗೆ', explore: 'ತೈಲದ ಮರುಬಳಕೆಯ ಹಂತಗಳನ್ನು ನೋಡಿ', hover: 'ಹಂತಗಳನ್ನು ನೋಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ', tap: 'ಹಂತಗಳನ್ನು ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ',
