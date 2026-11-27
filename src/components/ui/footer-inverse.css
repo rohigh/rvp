@@ -112,3 +112,6 @@
   .footer-back-top { min-height: 44px; }
   .rvp-footer[data-language="kn"] .footer-headline { font-size: clamp(27px,8.3vw,56px); line-height: 1.5; }
 }
+.footer-info > div { min-width:0; }
+.footer-enquiry-links .footer-mask { max-width:100%; }
+.footer-enquiry-links .footer-text-link { max-width:100%; }

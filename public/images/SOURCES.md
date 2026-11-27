@@ -64,3 +64,6 @@ The following replace the first and fourth card photos. Cards 2 and 3 keep their
 
 ## Remaining bilingual pages
 The Used Oil Collection, Products, About, Contact and Blogs pages reuse the stock assets documented above. Their images remain representative; no stock person or facility is identified as an RVP employee or a photographed RVP plant. All six guide images reuse these existing assets. The original transparent client logos are used throughout.
+
+## Expanded product catalogue
+The RRBO, Furnace Oil, LDO and DFO overview cards and detail pages reuse the documented storage, refinery-detail, processing and refinery stock assets. They illustrate industrial context and are not photographs of RVP inventory, fuel batches or manufacturing operations. No new external assets are introduced.

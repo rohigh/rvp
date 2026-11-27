@@ -5,7 +5,7 @@ const content = {
   en: {
     eyebrow: "OUR WORK",
     heading: "What We Do",
-    description: "From collecting used oil to making it useful again. One journey, handled at our own plant in Tumakuru.",
+    description: "Used oil collection and re-refining in Tumakuru. Base oil and industrial fuels for your business.",
     cards: [
       {
         category: "COLLECTION",
@@ -22,9 +22,9 @@ const content = {
         alt: "Metal pipework and processing equipment inside an industrial facility",
       },
       {
-        category: "BASE OIL",
-        title: "We Sell Base Oil",
-        body: "We sell the clean oil to oil makers, traders and factories, in drums or tankers.",
+        category: "PRODUCTS",
+        title: "Base Oil & Industrial Fuels",
+        body: "Explore RRBO, furnace oil, LDO and DFO. Discuss your application, quantity and delivery requirements.",
         link: "See our products",
         alt: "Large industrial oil storage tanks beneath a clear sky",
       },
@@ -33,7 +33,7 @@ const content = {
   kn: {
     eyebrow: "ನಮ್ಮ ಕೆಲಸ",
     heading: "ನಾವು ಏನು ಮಾಡುತ್ತೇವೆ",
-    description: "ಬಳಸಿದ ತೈಲವನ್ನು ಸಂಗ್ರಹಿಸುವುದರಿಂದ ಹಿಡಿದು ಮತ್ತೆ ಉಪಯುಕ್ತವಾಗಿಸುವವರೆಗೆ. ತುಮಕೂರಿನ ನಮ್ಮ ಸ್ವಂತ ಘಟಕದಲ್ಲಿ ನಡೆಯುವ ಪ್ರಕ್ರಿಯೆ.",
+    description: "ತುಮಕೂರಿನಲ್ಲಿ ಬಳಸಿದ ತೈಲದ ಸಂಗ್ರಹಣೆ ಮತ್ತು ಮರುಶುದ್ಧೀಕರಣ. ನಿಮ್ಮ ಉದ್ಯಮಕ್ಕಾಗಿ ಬೇಸ್ ಆಯಿಲ್ ಮತ್ತು ಕೈಗಾರಿಕಾ ಇಂಧನಗಳು.",
     cards: [
       {
         category: "ಸಂಗ್ರಹಣೆ",
@@ -50,9 +50,9 @@ const content = {
         alt: "ಕೈಗಾರಿಕಾ ಘಟಕದ ಒಳಗಿನ ಲೋಹದ ಕೊಳವೆಗಳು ಮತ್ತು ಸಂಸ್ಕರಣಾ ಉಪಕರಣಗಳು",
       },
       {
-        category: "ಬೇಸ್ ಆಯಿಲ್",
-        title: "ಬೇಸ್ ಆಯಿಲ್ ಮಾರಾಟ",
-        body: "ಶುದ್ಧೀಕರಿಸಿದ ತೈಲವನ್ನು ತೈಲ ತಯಾರಕರು, ವ್ಯಾಪಾರಿಗಳು ಮತ್ತು ಕಾರ್ಖಾನೆಗಳಿಗೆ ಡ್ರಮ್‌ಗಳು ಅಥವಾ ಟ್ಯಾಂಕರ್‌ಗಳಲ್ಲಿ ಮಾರಾಟ ಮಾಡುತ್ತೇವೆ.",
+        category: "ಉತ್ಪನ್ನಗಳು",
+        title: "ಬೇಸ್ ಆಯಿಲ್ ಮತ್ತು ಕೈಗಾರಿಕಾ ಇಂಧನಗಳು",
+        body: "RRBO, ಫರ್ನೇಸ್ ಆಯಿಲ್, LDO ಮತ್ತು DFO ಬಗ್ಗೆ ತಿಳಿಯಿರಿ. ನಿಮ್ಮ ಬಳಕೆ, ಪ್ರಮಾಣ ಮತ್ತು ವಿತರಣೆಯ ಅಗತ್ಯಗಳನ್ನು ಚರ್ಚಿಸಿ.",
         link: "ನಮ್ಮ ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ",
         alt: "ನಿರ್ಮಲ ಆಕಾಶದ ಕೆಳಗೆ ದೊಡ್ಡ ಕೈಗಾರಿಕಾ ತೈಲ ಸಂಗ್ರಹ ಟ್ಯಾಂಕ್‌ಗಳು",
       },

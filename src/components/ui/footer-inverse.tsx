@@ -3,6 +3,7 @@ import { AnimatePresence, LazyMotion, MotionConfig, domAnimation, m, useReducedM
 import { pageHref, pages, type Language } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import { company } from "@/lib/company";
+import { products, productPath } from "@/lib/products";
 import "./footer-inverse.css";
 
 const content = {
@@ -10,20 +11,20 @@ const content = {
     home: "RVP Refinery home", navigation: "Footer navigation", menu: "Menu",
     eyebrow: "A new life for used oil", headline: "Let’s talk", contact: "Talk to RVP Refinery",
     aboutLabel: "About RVP",
-    about: "We buy used oil, clean it and sell it again as base oil. Tumakuru, Karnataka. Since 2018.",
+    about: "We collect used oil and re-refine it into base oil in Tumakuru. Explore RRBO, furnace oil, LDO and DFO. Since 2018.",
     addressLabel: "Our plant",
     address: ["Sy. No. 26, Shed No. 2, Plot No. 97-B,", "Vasanthanarasapura Industrial Area,", "Nagenahalli, Kora Hobli, Tumakuru Taluk,", "Tumakuru, Karnataka – 572128"],
-    enquiry: "Work with us", sell: "Sell Used Oil", buy: "Buy Base Oil", getInTouch: "Get in touch",
+    enquiry: "Work with us", sell: "Sell Used Oil", buy: "All products", getInTouch: "Get in touch",
     rights: "All rights reserved.", top: "Back to top",
   },
   kn: {
     home: "ಆರ್‌ವಿಪಿ ರಿಫೈನರಿ ಮುಖಪುಟ", navigation: "ಅಡಿಭಾಗದ ನ್ಯಾವಿಗೇಷನ್", menu: "ಮೆನು",
     eyebrow: "ಬಳಸಿದ ತೈಲಕ್ಕೆ ಹೊಸ ಜೀವ", headline: "ಮಾತನಾಡೋಣ", contact: "ಆರ್‌ವಿಪಿ ರಿಫೈನರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ",
     aboutLabel: "ಆರ್‌ವಿಪಿ ಬಗ್ಗೆ",
-    about: "ನಾವು ಬಳಸಿದ ತೈಲವನ್ನು ಖರೀದಿಸಿ, ಶುದ್ಧೀಕರಿಸಿ, ಬೇಸ್ ಆಯಿಲ್ ಆಗಿ ಮಾರಾಟ ಮಾಡುತ್ತೇವೆ. ತುಮಕೂರು, ಕರ್ನಾಟಕ. 2018ರಿಂದ.",
+    about: "ನಾವು ಬಳಸಿದ ತೈಲವನ್ನು ಸಂಗ್ರಹಿಸಿ ತುಮಕೂರಿನಲ್ಲಿ ಮರುಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ತಯಾರಿಸುತ್ತೇವೆ. RRBO, ಫರ್ನೇಸ್ ಆಯಿಲ್, LDO ಮತ್ತು DFO ಬಗ್ಗೆ ತಿಳಿಯಿರಿ. 2018ರಿಂದ.",
     addressLabel: "ನಮ್ಮ ಘಟಕ",
     address: ["ಸರ್ವೆ ನಂ. 26, ಶೆಡ್ ನಂ. 2, ಪ್ಲಾಟ್ ನಂ. 97-B,", "ವಸಂತನರಸಾಪುರ ಕೈಗಾರಿಕಾ ಪ್ರದೇಶ,", "ನಾಗೇನಹಳ್ಳಿ, ಕೋರ ಹೋಬಳಿ, ತುಮಕೂರು ತಾಲ್ಲೂಕು,", "ತುಮಕೂರು, ಕರ್ನಾಟಕ – 572128"],
-    enquiry: "ನಮ್ಮೊಂದಿಗೆ ವ್ಯವಹರಿಸಿ", sell: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buy: "ಬೇಸ್ ಆಯಿಲ್ ಖರೀದಿ", getInTouch: "ಸಂಪರ್ಕಿಸಿ",
+    enquiry: "ನಮ್ಮೊಂದಿಗೆ ವ್ಯವಹರಿಸಿ", sell: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buy: "ಎಲ್ಲ ಉತ್ಪನ್ನಗಳು", getInTouch: "ಸಂಪರ್ಕಿಸಿ",
     rights: "ಎಲ್ಲ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.", top: "ಮೇಲಕ್ಕೆ ಹೋಗಿ",
   },
 } as const;
@@ -235,6 +236,7 @@ export default function FooterInverse({ language, currentPage }: { language: Lan
                   {[
                     { slug: "used-oil-collection", label: copy.sell },
                     { slug: "products", label: copy.buy },
+                    ...products.map(product=>({slug:productPath(product),label:product.name[language]})),
                     { slug: "contact", label: copy.getInTouch },
                   ].map((link, index) => (
                     <FooterReveal key={link.slug} delay={0.95 + index * 0.08}>

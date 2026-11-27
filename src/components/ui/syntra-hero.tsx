@@ -790,8 +790,8 @@ const HERO_COPY = {
  en: {
   eyebrow: 'Tumakuru, Karnataka · Since 2018',
   headline: ['We Give Used', 'Industrial Oil'], accentWord: 'a New Life.',
-  body: 'We buy used oil from garages, transport companies and factories. We clean it and turn it into base oil. In Tumakuru since 2018.',
-  primaryCta: 'Sell Used Oil', secondaryCta: 'Buy Base Oil',
+  body: 'We buy used industrial oil and re-refine it into base oil in Tumakuru. Explore RRBO, furnace oil, LDO and DFO for your business.',
+  primaryCta: 'Sell Used Oil', secondaryCta: 'Explore Products',
   process: 'The journey from used oil to base oil', explore: 'Explore the oil journey', hover: 'Hover or click to explore', tap: 'Tap to explore the oil journey',
   metrics: [{value:'Since 2018',label:'Reusing used oil',icon:'calendar'}, {value:'Tumakuru',label:'Our own plant',icon:'location'}, {value:'Base oil',label:'Made for reuse',icon:'plant'}],
   stages: [{title:'Collection',body:'From garages and factories'}, {title:'Used oil',body:'Brought to our plant'}, {title:'Cleaning',body:'Water, dirt and waste removed'}, {title:'Base oil',body:'Ready to be used again'}, {title:'Reuse',body:'For oil makers and factories'}]
@@ -799,8 +799,8 @@ const HERO_COPY = {
  kn: {
   eyebrow: 'ತುಮಕೂರು, ಕರ್ನಾಟಕ · 2018ರಿಂದ',
   headline: ['ಬಳಸಿದ ಕೈಗಾರಿಕಾ ತೈಲಕ್ಕೆ'], accentWord: 'ಹೊಸ ಜೀವ.',
-  body: 'ನಾವು ಗ್ಯಾರೇಜುಗಳು, ಸಾರಿಗೆ ಕಂಪನಿಗಳು ಮತ್ತು ಕಾರ್ಖಾನೆಗಳಿಂದ ಬಳಸಿದ ತೈಲವನ್ನು ಖರೀದಿಸುತ್ತೇವೆ. ಅದನ್ನು ಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ಆಗಿ ಪರಿವರ್ತಿಸುತ್ತೇವೆ. 2018ರಿಂದ ತುಮಕೂರಿನಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದ್ದೇವೆ.',
-  primaryCta: 'ಬಳಸಿದ ತೈಲ ಮಾರಾಟ', secondaryCta: 'ಬೇಸ್ ಆಯಿಲ್ ಖರೀದಿ',
+  body: 'ನಾವು ಬಳಸಿದ ಕೈಗಾರಿಕಾ ತೈಲವನ್ನು ಖರೀದಿಸಿ ತುಮಕೂರಿನಲ್ಲಿ ಮರುಶುದ್ಧೀಕರಿಸಿ ಬೇಸ್ ಆಯಿಲ್ ತಯಾರಿಸುತ್ತೇವೆ. ನಿಮ್ಮ ಉದ್ಯಮಕ್ಕಾಗಿ RRBO, ಫರ್ನೇಸ್ ಆಯಿಲ್, LDO ಮತ್ತು DFO ಬಗ್ಗೆ ತಿಳಿಯಿರಿ.',
+  primaryCta: 'ಬಳಸಿದ ತೈಲ ಮಾರಾಟ', secondaryCta: 'ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ',
   process: 'ಬಳಸಿದ ತೈಲದಿಂದ ಬೇಸ್ ಆಯಿಲ್‌ವರೆಗೆ', explore: 'ತೈಲದ ಮರುಬಳಕೆಯ ಹಂತಗಳನ್ನು ನೋಡಿ', hover: 'ಹಂತಗಳನ್ನು ನೋಡಲು ಕ್ಲಿಕ್ ಮಾಡಿ', tap: 'ಹಂತಗಳನ್ನು ನೋಡಲು ಟ್ಯಾಪ್ ಮಾಡಿ',
   metrics: [{value:'2018ರಿಂದ',label:'ತೈಲ ಮರುಬಳಕೆ',icon:'calendar'}, {value:'ತುಮಕೂರು',label:'ನಮ್ಮ ಸ್ವಂತ ಘಟಕ',icon:'location'}, {value:'ಬೇಸ್ ಆಯಿಲ್',label:'ಮರುಬಳಕೆಗಾಗಿ',icon:'plant'}],
   stages: [{title:'ಸಂಗ್ರಹಣೆ',body:'ಗ್ಯಾರೇಜು ಮತ್ತು ಕಾರ್ಖಾನೆಗಳಿಂದ'}, {title:'ಬಳಸಿದ ತೈಲ',body:'ನಮ್ಮ ಘಟಕಕ್ಕೆ ಸಾಗಣೆ'}, {title:'ಶುದ್ಧೀಕರಣ',body:'ನೀರು, ಕೊಳಕು ಮತ್ತು ತ್ಯಾಜ್ಯ ತೆಗೆಯುವುದು'}, {title:'ಬೇಸ್ ಆಯಿಲ್',body:'ಮರುಬಳಕೆಗೆ ಸಿದ್ಧ'}, {title:'ಮರುಬಳಕೆ',body:'ತೈಲ ತಯಾರಕರು ಮತ್ತು ಕಾರ್ಖಾನೆಗಳಿಗೆ'}]

@@ -8,15 +8,24 @@ Run `npm install`, then `npm run dev`. Run `npm run build` to compile the produc
 
 ## Pages
 
-Home, Used Oil Collection, Products, About, Contact, Blogs, and six individual guide pages are implemented in English and Kannada. Routes use `#/en/...` and `#/kn/...`. The language switch preserves the page, guide and selected section. Inner pages load as separate bundles.
+Home, Used Oil Collection, Products, four product detail pages, About, Contact, Blogs, and six individual guide pages are implemented in English and Kannada. Routes use `#/en/...` and `#/kn/...`. The language switch preserves the page, guide and selected section. Inner pages load as separate bundles.
 
 The Home components and supplied footer are retained. The remaining pages share the navy, cobalt, amber and cloud palette, transparent brand assets, rounded photography, section reveals, and responsive page styles.
+
+The shared catalogue in `src/lib/products.ts` powers product cards, navigation, detail pages, metadata and form selectors. Product detail routes (under both `#/en/` and `#/kn/`) are:
+
+- `products/re-refined-base-oil`
+- `products/furnace-oil`
+- `products/light-diesel-oil`
+- `products/distilled-fuel-oil`
+
+Each detail page retains its product when switching languages. Its quote action opens `?section=quote-form` with the product selected. General enquiry links use `contact?section=message-form&product=<id>`; the overview quote form also accepts `&product=<id>`. Product selection, intended application, quantity and delivery details are included in email/WhatsApp handoffs and the existing endpoint payload.
 
 ## Client details
 
 Client contact details are configured in `src/lib/company.ts`: +91 91766 42399 for calls and WhatsApp, and rvp.tumkur@gmail.com for email. These details appear across both languages and power enquiry handoff links. A verified map URL and a server enquiry endpoint remain unconfigured. The address button opens a Maps search for the supplied address.
 
-Product grades, lab values, capacity, minimum pickup quantity, pickup charges and service districts are not fabricated. The product table and collection FAQ direct visitors to confirm these details.
+RVP-specific fuel grades, batch specifications, manufacturing/sourcing details, availability, packing, prices and supply terms still need client confirmation. The supplied document contains no verified numerical fuel specifications. Public product pages describe properties to discuss rather than publishing invented values. Only RRBO is described as made at RVP’s plant. Product grades, lab values, capacity, minimum pickup quantity, pickup charges and service districts are not fabricated. The product table and collection FAQ direct visitors to confirm these details.
 
 ## Forms
 

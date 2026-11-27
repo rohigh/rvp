@@ -11,4 +11,10 @@ export const labels = {
  en: { sell: "Sell Used Oil", menu: "Open menu", close: "Close menu", navigation: "Main navigation", description: "Explore RVP Refinery", skip: "Skip to content" },
  kn: { sell: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", menu: "ಮೆನು ತೆರೆಯಿರಿ", close: "ಮೆನು ಮುಚ್ಚಿರಿ", navigation: "ಮುಖ್ಯ ನ್ಯಾವಿಗೇಷನ್", description: "ಆರ್‌ವಿಪಿ ರಿಫೈನರಿ ಬಗ್ಗೆ ತಿಳಿಯಿರಿ", skip: "ವಿಷಯಕ್ಕೆ ಹೋಗಿ" },
 };
-export const pageHref = (language: Language, slug: string, section?: string) => `#/${language}/${slug}${section ? "?section=" + encodeURIComponent(section) : ""}`;
+export type PageSlug = (typeof pages)[number]["slug"];
+export const pageHref = (language: Language, slug: string, section?: string, query?: Record<string,string>) => {
+ const params = new URLSearchParams();
+ if (section) params.set("section",section);
+ for (const [key,value] of Object.entries(query??{})) params.set(key,value);
+ return `#/${language}/${slug}${params.size?"?"+params.toString():""}`;
+};

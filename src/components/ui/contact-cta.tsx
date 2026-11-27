@@ -8,15 +8,15 @@ import { company, tx, whatsappHref } from "@/lib/company";
 const content = {
   en: {
     eyebrow: "TALK TO RVP",
-    heading: ["Have Used Oil?", "Need Base Oil?"],
-    body: "Tell us the oil type and quantity, or ask us for a base oil quote.",
-    sell: "Sell Used Oil", buy: "Buy Base Oil",
+    heading: ["Have Used Oil?", "Need Oil or Fuel?"],
+    body: "Tell us about your used oil, or discuss RRBO, furnace oil, LDO and DFO for your business.",
+    sell: "Sell Used Oil", buy: "Explore Products",
   },
   kn: {
     eyebrow: "ಆರ್‌ವಿಪಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ",
-    heading: ["ಬಳಸಿದ ತೈಲವಿದೆಯೇ?", "ಬೇಸ್ ಆಯಿಲ್ ಬೇಕೇ?"],
-    body: "ತೈಲದ ಪ್ರಕಾರ ಮತ್ತು ಪ್ರಮಾಣವನ್ನು ತಿಳಿಸಿ, ಅಥವಾ ಬೇಸ್ ಆಯಿಲ್ ದರಕ್ಕಾಗಿ ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ.",
-    sell: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buy: "ಬೇಸ್ ಆಯಿಲ್ ಖರೀದಿ",
+    heading: ["ಬಳಸಿದ ತೈಲವಿದೆಯೇ?", "ತೈಲ ಅಥವಾ ಇಂಧನ ಬೇಕೇ?"],
+    body: "ನಿಮ್ಮ ಬಳಸಿದ ತೈಲದ ಬಗ್ಗೆ ತಿಳಿಸಿ, ಅಥವಾ ನಿಮ್ಮ ಉದ್ಯಮಕ್ಕಾಗಿ RRBO, ಫರ್ನೇಸ್ ಆಯಿಲ್, LDO ಮತ್ತು DFO ಬಗ್ಗೆ ಚರ್ಚಿಸಿ.",
+    sell: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buy: "ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ",
   },
 } as const;
 

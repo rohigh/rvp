@@ -1,5 +1,6 @@
 import { ArrowRight, Cog, Factory, FlaskConical, Truck, Warehouse, Wrench } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import { products } from "@/lib/products";
 import { BentoGridShowcase } from "@/components/ui/bento-grid";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -7,32 +8,26 @@ import { Button } from "@/components/ui/button";
 import { pageHref, type Language } from "@/lib/navigation";
 
 const content = {
-  en: {
-    eyebrow: "SUPPLIERS & BUYERS", heading: "Who We Work With",
-    introduction: "Connecting businesses with used oil to businesses that can put base oil to work.",
-    buy: "We Buy From", buyLabel: "USED OIL", sell: "We Sell To", sellLabel: "BASE OIL",
-    suppliers: ["Garages and service centres", "Transport companies and lorry owners", "Factories and workshops", "Machine owners"],
-    buyers: ["Lubricant oil makers", "Oil traders and dealers", "Factories that use base oil"],
-    supplierPrompt: "Have used oil to sell?", supplierBody: "Tell us the oil type and quantity. We’ll discuss collection with you.",
-    supplierLink: "Sell Used Oil", buyerLink: "Buy Base Oil",
-    buyerBody: "Clean base oil made from used oil at our Tumakuru plant.",
-    packing: "SUPPLY OPTIONS", drum: "Drums", tanker: "Tanker", product: "Re-Refined Base Oil",
-    visualTitle: "Keeping oil in use.", visualCaption: "Collection. Re-refining. Reuse.",
-    imageAlt: "Industrial metal pipes and processing equipment",
-  },
-  kn: {
-    eyebrow: "ಪೂರೈಕೆದಾರರು ಮತ್ತು ಖರೀದಿದಾರರು", heading: "ನಾವು ಯಾರೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತೇವೆ",
-    introduction: "ಬಳಸಿದ ತೈಲವಿರುವ ಉದ್ಯಮಗಳನ್ನು ಬೇಸ್ ಆಯಿಲ್ ಬಳಸುವ ಉದ್ಯಮಗಳೊಂದಿಗೆ ಸಂಪರ್ಕಿಸುತ್ತೇವೆ.",
-    buy: "ನಮ್ಮ ಪೂರೈಕೆದಾರರು", buyLabel: "ಬಳಸಿದ ತೈಲ", sell: "ನಮ್ಮ ಖರೀದಿದಾರರು", sellLabel: "ಬೇಸ್ ಆಯಿಲ್",
-    suppliers: ["ಗ್ಯಾರೇಜುಗಳು ಮತ್ತು ಸೇವಾ ಕೇಂದ್ರಗಳು", "ಸಾರಿಗೆ ಕಂಪನಿಗಳು ಮತ್ತು ಲಾರಿ ಮಾಲೀಕರು", "ಕಾರ್ಖಾನೆಗಳು ಮತ್ತು ಕಾರ್ಯಾಗಾರಗಳು", "ಯಂತ್ರಗಳ ಮಾಲೀಕರು"],
-    buyers: ["ಲೂಬ್ರಿಕಂಟ್ ತೈಲ ತಯಾರಕರು", "ತೈಲ ವ್ಯಾಪಾರಿಗಳು ಮತ್ತು ವಿತರಕರು", "ಬೇಸ್ ಆಯಿಲ್ ಬಳಸುವ ಕಾರ್ಖಾನೆಗಳು"],
-    supplierPrompt: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ ಮಾಡಬೇಕೇ?", supplierBody: "ತೈಲದ ಪ್ರಕಾರ ಮತ್ತು ಪ್ರಮಾಣವನ್ನು ತಿಳಿಸಿ. ಸಂಗ್ರಹಣೆಯ ಬಗ್ಗೆ ನಿಮ್ಮೊಂದಿಗೆ ಚರ್ಚಿಸುತ್ತೇವೆ.",
-    supplierLink: "ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buyerLink: "ಬೇಸ್ ಆಯಿಲ್ ಖರೀದಿ",
-    buyerBody: "ತುಮಕೂರಿನ ನಮ್ಮ ಘಟಕದಲ್ಲಿ ಬಳಸಿದ ತೈಲದಿಂದ ತಯಾರಿಸಿದ ಶುದ್ಧ ಬೇಸ್ ಆಯಿಲ್.",
-    packing: "ಪೂರೈಕೆ ಆಯ್ಕೆಗಳು", drum: "ಡ್ರಮ್‌ಗಳು", tanker: "ಟ್ಯಾಂಕರ್", product: "ಮರುಶುದ್ಧೀಕರಿಸಿದ ಬೇಸ್ ಆಯಿಲ್",
-    visualTitle: "ತೈಲದ ನಿರಂತರ ಮರುಬಳಕೆ.", visualCaption: "ಸಂಗ್ರಹಣೆ. ಶುದ್ಧೀಕರಣ. ಮರುಬಳಕೆ.",
-    imageAlt: "ಕೈಗಾರಿಕಾ ಲೋಹದ ಕೊಳವೆಗಳು ಮತ್ತು ಸಂಸ್ಕರಣಾ ಉಪಕರಣಗಳು",
-  },
+ en: {
+  eyebrow:"SUPPLIERS & BUYERS", heading:"Who We Work With", introduction:"From businesses with used oil to buyers of base oil and industrial heating fuels.",
+  buy:"We Buy From", buyLabel:"USED OIL", sell:"We Sell To", sellLabel:"BASE OIL & FUELS",
+  suppliers:["Garages and service centres","Transport companies and lorry owners","Factories and workshops","Machine owners"],
+  buyers:["Lubricant oil makers","Oil traders and dealers","Factories with industrial heating equipment"],
+  supplierPrompt:"Have used oil to sell?", supplierBody:"Tell us the oil type and quantity. We’ll discuss collection with you.", supplierLink:"Sell Used Oil", buyerLink:"Explore Products",
+  buyerBody:"RRBO for lubricant oil makers. Furnace oil, LDO and DFO for compatible industrial heating equipment.",
+  packing:"OUR PRODUCT RANGE", drum:"RRBO", tanker:"Furnace Oil · LDO · DFO", product:"Discuss the product, application, quantity and delivery location.",
+  visualTitle:"Keeping oil in use.", visualCaption:"Collection. Re-refining. Reuse.", imageAlt:"Industrial metal pipes and processing equipment",
+ },
+ kn: {
+  eyebrow:"ಪೂರೈಕೆದಾರರು ಮತ್ತು ಖರೀದಿದಾರರು", heading:"ನಾವು ಯಾರೊಂದಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತೇವೆ", introduction:"ಬಳಸಿದ ತೈಲವಿರುವ ಉದ್ಯಮಗಳಿಂದ ಬೇಸ್ ಆಯಿಲ್ ಮತ್ತು ಕೈಗಾರಿಕಾ ತಾಪನ ಇಂಧನಗಳ ಖರೀದಿದಾರರವರೆಗೆ.",
+  buy:"ನಮ್ಮ ಪೂರೈಕೆದಾರರು", buyLabel:"ಬಳಸಿದ ತೈಲ", sell:"ನಮ್ಮ ಖರೀದಿದಾರರು", sellLabel:"ಬೇಸ್ ಆಯಿಲ್ ಮತ್ತು ಇಂಧನಗಳು",
+  suppliers:["ಗ್ಯಾರೇಜುಗಳು ಮತ್ತು ಸೇವಾ ಕೇಂದ್ರಗಳು","ಸಾರಿಗೆ ಕಂಪನಿಗಳು ಮತ್ತು ಲಾರಿ ಮಾಲೀಕರು","ಕಾರ್ಖಾನೆಗಳು ಮತ್ತು ಕಾರ್ಯಾಗಾರಗಳು","ಯಂತ್ರಗಳ ಮಾಲೀಕರು"],
+  buyers:["ಲೂಬ್ರಿಕಂಟ್ ತೈಲ ತಯಾರಕರು","ತೈಲ ವ್ಯಾಪಾರಿಗಳು ಮತ್ತು ವಿತರಕರು","ಕೈಗಾರಿಕಾ ತಾಪನ ಉಪಕರಣಗಳಿರುವ ಕಾರ್ಖಾನೆಗಳು"],
+  supplierPrompt:"ಬಳಸಿದ ತೈಲ ಮಾರಾಟ ಮಾಡಬೇಕೇ?", supplierBody:"ತೈಲದ ಪ್ರಕಾರ ಮತ್ತು ಪ್ರಮಾಣವನ್ನು ತಿಳಿಸಿ. ಸಂಗ್ರಹಣೆಯ ಬಗ್ಗೆ ನಿಮ್ಮೊಂದಿಗೆ ಚರ್ಚಿಸುತ್ತೇವೆ.", supplierLink:"ಬಳಸಿದ ತೈಲ ಮಾರಾಟ", buyerLink:"ಉತ್ಪನ್ನಗಳನ್ನು ನೋಡಿ",
+  buyerBody:"ಲೂಬ್ರಿಕಂಟ್ ತೈಲ ತಯಾರಕರಿಗೆ RRBO. ಹೊಂದುವ ಕೈಗಾರಿಕಾ ತಾಪನ ಉಪಕರಣಗಳಿಗೆ ಫರ್ನೇಸ್ ಆಯಿಲ್, LDO ಮತ್ತು DFO.",
+  packing:"ನಮ್ಮ ಉತ್ಪನ್ನಗಳ ಶ್ರೇಣಿ", drum:"RRBO", tanker:"ಫರ್ನೇಸ್ ಆಯಿಲ್ · LDO · DFO", product:"ಉತ್ಪನ್ನ, ಬಳಕೆ, ಪ್ರಮಾಣ ಮತ್ತು ವಿತರಣೆಯ ಸ್ಥಳವನ್ನು ಚರ್ಚಿಸಿ.",
+  visualTitle:"ತೈಲದ ನಿರಂತರ ಮರುಬಳಕೆ.", visualCaption:"ಸಂಗ್ರಹಣೆ. ಮರುಶುದ್ಧೀಕರಣ. ಮರುಬಳಕೆ.", imageAlt:"ಕೈಗಾರಿಕಾ ಲೋಹದ ಕೊಳವೆಗಳು ಮತ್ತು ಸಂಸ್ಕರಣಾ ಉಪಕರಣಗಳು",
+ },
 } as const;
 
 function AudienceList({ items }: { items: readonly { label: string; icon: LucideIcon }[] }) {
@@ -85,7 +80,7 @@ export default function WhoWeWorkWith({ language }: { language: Language }) {
           featureTags={
             <Card className={cardClass}>
               <CardHeader className="gap-2"><p className="text-xs font-semibold tracking-[0.1em] text-brand">{copy.sellLabel}</p><CardTitle className="text-2xl font-medium leading-relaxed">{copy.sell}</CardTitle><CardDescription className="text-sm leading-7">{copy.buyerBody}</CardDescription></CardHeader>
-              <CardContent><Badge variant="outline" className="border-[#C8D7EA] bg-[#F4F7FA] px-3 py-1.5 text-brand">RRBO</Badge></CardContent>
+              <CardContent className="flex flex-wrap gap-2">{products.map(product=><Badge key={product.id} variant="outline" className="border-[#C8D7EA] bg-[#F4F7FA] px-3 py-1.5 text-brand">{product.shortName[language]}</Badge>)}</CardContent>
             </Card>
           }
           statistic={
