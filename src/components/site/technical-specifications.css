@@ -1,0 +1,36 @@
+.technical-specifications { scroll-margin-top:128px; background:#fff; }
+.technical-specifications > .page-shell { min-width:0; }
+.technical-specifications .section-heading { max-width:1000px; }
+.technical-specifications .section-intro { max-width:1000px; }
+.technical-table-block { min-width:0; margin-top:36px; }
+.technical-table-block + .technical-table-block { padding-top:36px; margin-top:40px; border-top:1px solid #c8d7ea; }
+.technical-scroll-hint { margin-bottom:12px; color:#092243; font-size:14px; line-height:1.8; }
+.technical-table-scroll { max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; border:1px solid #c8d7ea; border-radius:24px; background:#fff; }
+.technical-table-scroll:focus-visible { outline:2px solid #14509e; outline-offset:4px; }
+.technical-table { width:100%; min-width:900px; border-collapse:separate; border-spacing:0; table-layout:fixed; text-align:left; font-size:16px; line-height:1.8; font-variant-numeric:tabular-nums; }
+.technical-table caption { padding:22px 24px; background:#f4f7fa; color:#092243; text-align:left; font-size:19px; font-weight:600; line-height:1.7; }
+.technical-table thead th { padding:20px 22px; background:#092243; color:white; font-size:15px; font-weight:600; line-height:1.8; vertical-align:top; }
+.technical-table tbody th,.technical-table td { padding:20px 22px; border-top:1px solid #c8d7ea80; vertical-align:top; overflow-wrap:break-word; }
+.technical-table tbody th { color:#092243; background:#f4f7fa; font-weight:500; }
+.technical-table td { color:#121b26; background:white; }
+.technical-table tbody tr:nth-child(even) td { background:#f4f7fa70; }
+.technical-table th + th,.technical-table td { border-left:1px solid #c8d7ea50; }
+.technical-table--grades .technical-table { min-width:1120px; }
+.technical-table--grades thead th:first-child { width:30%; }
+.technical-table--grades thead th:last-child { width:18%; }
+.technical-table--comparison .technical-table { min-width:1050px; }
+.technical-table--comparison thead th:first-child { width:30%; }
+.technical-table--comparison thead th:last-child { width:20%; }
+.technical-table--performance thead th:first-child { width:30%; }
+.technical-table--performance thead th:nth-child(2) { width:48%; }
+.technical-table--screening .technical-table { min-width:960px; }
+.technical-table--screening thead th:first-child { width:32%; }
+.technical-table--screening thead th:nth-child(2) { width:40%; }
+.technical-table--coa .technical-table { min-width:840px; }
+.technical-table--coa thead th:first-child { width:34%; }
+.technical-table-notes { display:grid; gap:12px; margin-top:22px; max-width:1150px; }
+.technical-table-notes p { color:#092243; font-size:15px; line-height:1.9; }
+.page-hero .product-specification-link { display:inline-flex; align-items:center; flex-basis:100%; min-height:44px; color:inherit; font-size:16px; text-underline-offset:6px; text-decoration:underline; }
+.page-hero .product-specification-link:hover { color:#e59833; }
+html[lang="kn"] .technical-table { line-height:1.95; }
+@media(max-width:600px) { .technical-table-scroll { border-radius:20px; } .technical-table caption { padding:20px; font-size:18px; } .technical-table-block { margin-top:28px; } .technical-table thead th { font-size:15px; } }

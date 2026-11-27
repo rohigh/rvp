@@ -25,7 +25,15 @@ Each detail page retains its product when switching languages. Its quote action 
 
 Client contact details are configured in `src/lib/company.ts`: +91 91766 42399 for calls and WhatsApp, and rvp.tumkur@gmail.com for email. These details appear across both languages and power enquiry handoff links. A verified map URL and a server enquiry endpoint remain unconfigured. The address button opens a Maps search for the supplied address.
 
-RVP-specific fuel grades, batch specifications, manufacturing/sourcing details, availability, packing, prices and supply terms still need client confirmation. The supplied document contains no verified numerical fuel specifications. Public product pages describe properties to discuss rather than publishing invented values. Only RRBO is described as made at RVP’s plant. Product grades, lab values, capacity, minimum pickup quantity, pickup charges and service districts are not fabricated. The product table and collection FAQ direct visitors to confirm these details.
+RVP-specific fuel grades, batch specifications, manufacturing/sourcing details, availability, packing, prices and supply terms still need client confirmation. Verified RVP batch results remain unprovided. Product detail pages include labelled reference specification tables; their figures are not presented as measured RVP results. Only RRBO is described as made at RVP’s plant. Product grades, lab values, capacity, minimum pickup quantity, pickup charges and service districts are not fabricated. The product table and collection FAQ direct visitors to confirm these details.
+
+## Technical specification references
+
+The typed `src/lib/product-specifications.ts` module and reusable `src/components/site/technical-specifications.tsx` component provide the tables in both languages. Every detail page has a `specifications` section, linked through the existing hash-router convention `?section=specifications`. The tables scroll within their containers on narrow screens and keep an anchor offset for the header.
+
+The client-supplied reference was copied once from Rerol's `site/page-builder/specifications.mjs`, `pages-details.mjs` and `Rerol_Used_Oil_RRBO_LDO_DFO_Specifications.docx`. RVP imports none of those files at runtime or build time. Rerol remains unmodified.
+
+RRBO compares SN70/SN150/SN350/SN500 across 12 properties. LDO has 11 rows separating standard-reference requirements from working targets. DFO has 11 engineering-target rows and a separate five-row applicable contaminant screening reference. Furnace Oil has seven COA-information rows; the supplied references contain no numerical Furnace Oil limits. Notes retain seasonal, sulphur, provisional, preferred and application-dependent qualifications without claiming RVP certification or completed laboratory results.
 
 ## Forms
 
