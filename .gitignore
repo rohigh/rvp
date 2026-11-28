@@ -14,3 +14,5 @@ Thumbs.db
 /logo.jpeg
 /*.docx
 /*.pdf
+
+.sanity/

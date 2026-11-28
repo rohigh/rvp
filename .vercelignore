@@ -11,3 +11,5 @@ dist
 logo.jpeg
 *.docx
 *.pdf
+
+.sanity
